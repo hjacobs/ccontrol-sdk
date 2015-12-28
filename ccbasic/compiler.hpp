@@ -8,7 +8,9 @@
 #define _COMPILER_HPP
 
 #include <string.h>
-#include <fstream.h>
+#include <fstream>
+
+using namespace std;
 
 #pragma warning(disable: 4290)
 
@@ -48,7 +50,7 @@ enum DATATYPES { USERBIT, USERBYTE, USERWORD, USERPORT, USERBYTEPORT,
 					  // neu ab Juni 98, Netzwerkunterstützung
 					  REMOTE12BITADPORT, REMOTEADPORT, REMOTEPORT, REMOTESTATE };
 
-					  
+
 //---------------------
   struct COMPILERERROR
 //---------------------

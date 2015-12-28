@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <fstream.h>
+#include <fstream>
 
 #include "compiler.hpp"
 #include "68HC05B6/codedefs.h"
@@ -1170,10 +1170,10 @@ const int USERDATA_LIMITS[] = { MAX_USERBITS, MAX_USERBYTES, MAX_USERWORDS,
 
   ifstream is;
   char fullfilename[512];
-  
-  //changed \\ to / (dos to unix directories)  _CHANGE_ Diman Todorov 
-  sprintf(fullfilename, "%s/%s", pSourcePath, filename); 
-  is.open(fullfilename, ios::in|ios::nocreate);
+
+  //changed \\ to / (dos to unix directories)  _CHANGE_ Diman Todorov
+  sprintf(fullfilename, "%s/%s", pSourcePath, filename);
+  is.open(fullfilename, ios::in);
 
   if ( is.fail() )
   {
@@ -1235,7 +1235,7 @@ const int USERDATA_LIMITS[] = { MAX_USERBITS, MAX_USERBYTES, MAX_USERWORDS,
 
   //change \\ to / (dos to unix directories) _CHANGE_ Diman Todorov
   sprintf(fullfilename, "%s/%s", pSourcePath, filename);
-  is.open(fullfilename, ios::in|ios::nocreate);
+  is.open(fullfilename, ios::in);
 
   if ( is.fail() )
   {

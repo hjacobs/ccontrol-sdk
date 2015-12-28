@@ -4,8 +4,8 @@
 
 ********************************************************************/
 
-#include <iostream.h>
-#include <fstream.h>
+#include <iostream>
+#include <fstream>
 #include <stdio.h>
 #include <string.h>
 
@@ -42,7 +42,7 @@ CCompiler compiler(sourcepath);
   char* pInFileName = argv[1];
 
   ifstream is(pInFileName);
-  
+
   if ( is.fail() )
   {
 	 cout << TXT_CANTREAD;
@@ -50,10 +50,10 @@ CCompiler compiler(sourcepath);
   }
 
   strcpy(infilenamedup, pInFileName);
-  
+
   char* pLastBackSlash = strrchr(infilenamedup, '\\');
   strcpy(sourcepath, ".");
-  
+
   if ( pLastBackSlash )
   {
 	 *pLastBackSlash = 0;
@@ -175,7 +175,7 @@ CCompiler compiler(sourcepath);
 //	 if ( argc > 2 )
 //	 {
 //		cout << TXT_CALLINGLOADER;
-//TODO: finish ccdownload 
+//TODO: finish ccdownload
 //		execl("ccupload", pOutFileName);
 //	 }
 //	 else
