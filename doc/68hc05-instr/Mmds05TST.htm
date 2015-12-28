@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>TST</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+TST - Test for Negative or Zero             ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+TST opr  ;(opr) - $00 ;(DIR) 8 bit direct
+<P></P>
+TST ,X  ;(X) - $00 ;(IX)  indexed no offset
+<P></P>
+TST opr,X ;(opr+X) - $00 ;(IX1) indexed w/8 bit offset
+<P></P>
+
+<P></P>
+Sets the condition codes N and Z according to the contents of M. The contents
+of M(opr) are not altered.
+<P></P>
+</BODY>
+</HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>STX</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+STX - Store Index Register in Memory        ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+STX opr  ;(opr) &lt;= X ;(DIR) 8 bit direct
+<P></P>
+STX opr  ;(opr) &lt;= X ;(EXT) 16 bit extended
+<P></P>
+STX ,X  ;(X) &lt;= X ;(IX)  indexed no offset
+<P></P>
+STX opr,X ;(opr+X) &lt;= X ;(IX1) indexed w/8 bit offset
+<P></P>
+STX opr,X ;(opr+X) &lt;= X ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+The contents of X remain unchanged.
+<P></P>
+</BODY>
+</HTML>

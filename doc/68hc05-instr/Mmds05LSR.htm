@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>LSR</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+LSR - Logical Shift Right                   ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+LSR opr  ;0 &gt; (opr) &gt; C  ;(DIR) 8 bit direct
+<P></P>
+LSR ,X  ;0 &gt; (X) &gt; C  ;(IX)  indexed no offset
+<P></P>
+LSR opr,X ;0 &gt; (opr+X) &gt; C  ;(IX1) indexed w/8 bit offset
+<P></P>
+
+<P></P>
+Shifts all bits of M(opr) one place to the right. Bit 7 is loaded with zero.
+Bit 0 is shifted into the C bit.
+<P></P>
+</BODY>
+</HTML>

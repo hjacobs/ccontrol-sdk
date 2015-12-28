@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>LSL</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+LSL - Logical Shift Left (Same as ASL)      ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+LSL opr  ;C &lt; (opr) &lt; 0  ;(DIR) 8 bit direct
+<P></P>
+LSL ,X  ;C &lt; (X) &lt; 0  ;(IX)  indexed no offset
+<P></P>
+LSL opr,X ;C &lt; (opr+X) &lt; 0  ;(IX1) indexed w/8 bit offset
+<P></P>
+
+<P></P>
+Shifts all bits of M(opr) one place to the left. Bit 0 is loaded with zero.
+The C bit is loaded from the most significant bit of M.
+<P></P>
+</BODY>
+</HTML>

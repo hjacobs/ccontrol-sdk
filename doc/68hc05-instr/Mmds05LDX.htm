@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>LDX</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+LDX - Load Index Register from Memory       ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+LDX #opr ;X &lt;= opr  ;(IMM) 8 bit immediate
+<P></P>
+LDX opr  ;X &lt;= (opr)  ;(DIR) 8 bit direct
+<P></P>
+LDX opr  ;X &lt;= (opr)  ;EXT) 16 bit extended
+<P></P>
+LDX ,X  ;X &lt;= (X)  ;(IX)  indexed no offset
+<P></P>
+LDX opr,X ;X &lt;= (opr + X)  ;(IX1) indexed w/8 bit offset
+<P></P>
+LDX opr,X ;X &lt;= (opr + X)  ;(IX2) indexed w/16 bit offset
+<P></P>
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>NEG</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+NEG - Negate (Two's Complement)             ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+NEG opr  ;(opr) &lt; $00 - (opr) ;(DIR) 8 bit direct
+<P></P>
+NEG ,X  ;(X) &lt; $00 - (X)  ;(IX)  indexed no offset
+<P></P>
+NEG opr,X ;(opr+X) &lt; $00 -(opr+X) ;(IX1) indexed,8 bit offset
+<P></P>
+
+<P></P>
+Replaces the contents of M(opr) with its two's complement. Note that the value
+$80 is left unchanged.
+<P></P>
+</BODY>
+</HTML>

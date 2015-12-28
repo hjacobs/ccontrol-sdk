@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>CLI</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+CLI - Clear Interrupt Mask                  ;flags(I)
+<P></P>
+</B>
+<P></P>
+CLI ;I &lt; 0  ;(INH) inherent addressing
+<P></P>
+
+<P></P>
+Clears the interrupt mask bit in the CCR. When the I bit is clear, interrupts
+are enabled. There is a one E-clock cycle delay in the clearing mechanism for
+the I bit such that if interrupts were previously disabled, the next instruction
+after a CLI will always be executed, even if there was an interrupt pending
+prior to the execution of CLI instruction.
+<P></P>
+</BODY>
+</HTML>

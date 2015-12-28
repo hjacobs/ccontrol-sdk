@@ -1,0 +1,22 @@
+This ccontrol development tools collection is what people call a weekend hack.
+Userfriendlyness is kept to a minimum and I wouldnt be surprised if there are 
+tons of bugs. 
+
+Read the INSTALL file.
+To compile a programm type "ccbasic hello.bas" where hello.bas is your program
+name.
+This should generate a file called hello.dat (or whatever your program's name is .dat)
+To upload the file to the ccontrol unit type ccupload -f hello.dat -d /dev/ttySx
+where /dev/ttySx is the device to which your ccontrol unit is connected.
+Please notice that if you chose the wrong device the programm might just hang
+without giving you an error message.
+Try a different ttyS if that happens.
+The ccdownload is just for testing purposes, it dumps a program from the cc unit.
+Note that it just dumps the byte code, not a dat file and not a cc basic code.
+With the assembler you can assemble mc68hc705b16 assembly. Read conrad's ccbasic
+manual on how to include those files into your programm.
+(I was successful doing this using the ccbasic samples provided by conrad)
+
+
+If you find any or fix any please contact me at diman.todorov@chello.at
+

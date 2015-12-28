@@ -1,0 +1,25 @@
+Make sure you have removed all carriage returns from your source file with 
+the dos2unix tool in the bin/ directory.
+
+The assembler has originally been developed for dos like 8.3 filenames, so 
+please be prepared to face some bugs of this nature :-)
+A known bug is that filename.asm and filename.asm-other both have a 
+filename.s19 as default output.
+There might exist a some other bugs being caused by the same problem.
+
+Be very careful with your code formatting.
+Not applying the "label <empty space> operator <empty space> operand" format
+can cause the assembler crash or even compile unpredicatble.
+
+Redefinable symbols end with a @.
+Wrong		Right
+blah equ 3	blah@ equ 3
+blah equ 4 	blah@ equ 4
+
+Comments begin with a * or a ;
+If you want to use the ascii value of ; then type \;
+
+Include files end with an 'end' at the operator field ("<tab>end").
+You can nest at most 30 include files.
+
+please notify me about new bugs at diman.todorov@chello.at

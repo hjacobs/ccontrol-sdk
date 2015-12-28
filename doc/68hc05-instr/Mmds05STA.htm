@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>STA</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+STA - Store Accumulator in Memory           ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+STA opr  ;(opr) &lt;= A ;(DIR) 8 bit direct
+<P></P>
+STA opr  ;(opr) &lt;= A ;(EXT) 16 bit extended
+<P></P>
+STA ,X  ;(X) &lt;= A ;(IX)  indexed no offset
+<P></P>
+STA opr,X ;(opr+X) &lt;= A ;(IX1) indexed w/8 bit offset
+<P></P>
+STA opr,X ;(opr+X) &lt;= A ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+The contents of the accumulator A remain unchanged.
+<P></P>
+</BODY>
+</HTML>

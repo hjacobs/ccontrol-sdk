@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>JSR</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+JSR - Jump to Subroutine                    ;flags()
+<P></P>
+</B>
+<P></P>
+The return address is the address of the next instruction after the JSR. The
+return address if first pushed on the stack, LOW byte then HIGH byte.
+<P></P>
+ ;push PCL ;SP &lt;= SP - 1
+<P></P>
+ ;push PCH ;SP &lt;= SP - 1
+<P></P>
+
+<P></P>
+The following  then happens depending upon the addressing mode:
+<P></P>
+
+<P></P>
+JSR opr  ;PC &lt;= opr ;(DIR) 8 bit direct
+<P></P>
+JSR opr  ;PC &lt;= opr ;(EXT) 16 bit extended
+<P></P>
+JSR ,X  ;PC &lt;= X ;(IX)  indexed no offset
+<P></P>
+JSR opr,X ;PC &lt;= X + opr ;(IX1) indexed w/8 bit offset
+<P></P>
+JSR opr,X ;PC &lt;= X + opr ;(IX2) indexed w/16 bit offset
+<P></P>
+</BODY>
+</HTML>

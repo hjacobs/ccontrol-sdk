@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>SWI</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+SWI - Software Interrupt               ;flags(I)
+<P></P>
+</B>
+<P></P>
+SWI ;PC &lt;= PC + 1 ;(INH) inherent addressing
+<P></P>
+ ;push PCL ;SP &lt;= SP - 1
+<P></P>
+ ;push PCH ;SP &lt;= SP - 1
+<P></P>
+ ;push X  ;SP &lt;= SP - 1
+<P></P>
+ ;push A  ;SP &lt;= SP - 1
+<P></P>
+ ;push CCR ;SP &lt;= SP - 1
+<P></P>
+ ;I &lt;= 1
+<P></P>
+ ;PCH &lt;= (swi vector_hi)
+<P></P>
+ ;PCL &lt;= (swi vector_low)
+<P></P>
+
+<P></P>
+The address of the SWI vector can be expressed as $xFFC :$xFFD, where x is 1
+or 3 depending on the version of 68HC05 being used. This instruction is not
+maskable by the I bit.
+<P></P>
+</BODY>
+</HTML>

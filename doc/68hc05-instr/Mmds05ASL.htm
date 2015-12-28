@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>ASL</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+ASL - Arithmetic Shift Left                 ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+ASL opr  ; C &lt;  (opr) &lt; 0  ;(DIR)  8 bit direct
+<P></P>
+ASL ,X  ; C &lt;  (X) &lt; 0  ;(IX)   indexed no offset
+<P></P>
+ASL opr,X ; C &lt;  (opr+X) &lt; 0  ;(IX1)  indexed, 8 bit offset
+<P></P>
+
+<P></P>
+Shifts all bits of the opr one place to the left. Bit 0 is loaded with a zero.
+The C bit in CCR is loaded from the most significant bit of M (opr).
+<P></P>
+</BODY>
+</HTML>

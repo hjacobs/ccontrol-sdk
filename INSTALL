@@ -1,0 +1,10 @@
+Type "make" in the current directory.
+This creates the binaries in the subdirectory bin/
+Copy or symlink the ones you need to your path (for example to /usr/sbin).
+
+If you have problems compiling the package please mail me at
+diman.todorov@chello.at 
+Please attach the error message your compiler generated.
+(to dump error messages to a file do "make > error.log 2>&1" 
+this creates the file error.log containing the error message)
+

@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>BIT</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+BIT - Bit Test Acc with Memory              ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+BIT #opr ;A ^ opr  ;(IMM) 8 bit immediate
+<P></P>
+BIT opr  ;A ^ (opr) ;(DIR) 8 bit direct
+<P></P>
+BIT opr  ;A ^ (opr) ;(EXT) 16 bit extended
+<P></P>
+BIT ,X  ;A ^ (X)  ;(IX)  indexed no offset
+<P></P>
+BIT opr,X ;A ^ (opr+X) ;(IX1) indexed w/8 bit offset
+<P></P>
+BIT opr,X ;A ^ (opr+X) ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+Neither the contents of A nor M are affected.
+<P></P>
+</BODY>
+</HTML>

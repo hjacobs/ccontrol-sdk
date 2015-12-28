@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>ROL</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+ROL - Rotate Left through Carry             ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+ROL opr  ;C &lt; (opr) &lt; C  ;(DIR) 8 bit direct
+<P></P>
+ROL ,X  ;C &lt; (X) &lt; C  ;(IX)  indexed no offset
+<P></P>
+ROL opr,X ;C &lt; (opr+X) &lt; C  ;(IX1) indexed w/8 bit offset
+<P></P>
+
+<P></P>
+Shifts all bits of M(opr) one place to the left. Bit 0 is loaded from the C
+bit. The C bit is loaded from the MSB of M.
+<P></P>
+</BODY>
+</HTML>

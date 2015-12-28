@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>CMP</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+CMP - Compare Accumulator with Memory       ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+CMP #opr ;A - opr  ;(IMM) 8 bit immediate
+<P></P>
+CMP opr ;A - (opr) ;(DIR) 8 bit direct
+<P></P>
+CMP opr ;A - (opr) ;(EXT) 16 bit extended
+<P></P>
+CMP ,X  ;A - (X)  ;(IX)  indexed no offset
+<P></P>
+CMP opr,X ;A - (opr+X) ;(IX1) indexed w/8 bit offset
+<P></P>
+CMP opr,X ;A - (opr+X) ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+The contents of both A and M (opr) are unchanged.
+<P></P>
+</BODY>
+</HTML>

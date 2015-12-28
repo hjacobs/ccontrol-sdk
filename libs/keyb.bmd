@@ -1,0 +1,21 @@
+
+'
+' KEYBOARD
+'
+'memory management begin
+define key_nr byte[1]
+define key_compare byte[2]
+'memory management end
+
+define keyboard ad[8]
+
+#KEY_IDENT
+    for key_nr = 0 to 11
+        looktab key_codes, key_nr, key_compare	
+	if abs( keyboard - key_compare) < 3 then goto KEY_PRESSED
+    next 
+    key_nr = -1
+return
+
+#KEY_PRESSED
+return

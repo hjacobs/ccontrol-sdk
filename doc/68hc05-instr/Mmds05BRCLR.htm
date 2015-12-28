@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>BRCLR</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+BRCLR - Branch if Bit n Clear               ;flags(C)
+<P></P>
+</B>
+<P></P>
+BRCLR n,opr,rel  ;PC &lt;= PC + 3 + rel ;(DIR) 8 bit direct
+<P></P>
+   ;if Mn = 0 (n=0,1,..7)
+<P></P>
+
+<P></P>
+Tests bit n (n=7,6,..0) in location M(opr) and branches if the bit is clear. M
+can be any RAM or I/O register address in the $0000 to $00FF area of memory
+(direct addressing).
+<P></P>
+</BODY>
+</HTML>

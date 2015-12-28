@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>LDA</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+LDA - Load Accumulator from Memory          ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+LDA #opr ;A &lt;= opr  ;(IMM) 8 bit immediate
+<P></P>
+LDA opr ;A &lt;= (opr)  ;(DIR) 8 bit direct
+<P></P>
+LDA opr ;A &lt;= (opr)  ;(EXT) 16 bit extended
+<P></P>
+LDA ,X  ;A &lt;= (X)  ;(IX)  indexed no offset
+<P></P>
+LDA opr,X ;A &lt;= (opr + X)  ;(IX1) indexed w/8 bit offset
+<P></P>
+LDA opr,X ;A &lt;= (opr + X)  ;(IX2) indexed w/16 bit offset
+<P></P>
+</BODY>
+</HTML>

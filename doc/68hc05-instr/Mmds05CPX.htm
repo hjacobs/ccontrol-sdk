@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>CPX</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+CPX - Compare Index Register with Memory    ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+CPX #opr ;X - opr  ;(IMM) 8 bit immediate
+<P></P>
+CPX opr  ;X - (opr) ;(DIR) 8 bit direct
+<P></P>
+CPX opr  ;X - (opr) ;(EXT) 16 bit extended
+<P></P>
+CPX ,X  ;X - (X)  ;(IX)  indexed no offset
+<P></P>
+CPX opr,X ;X - (opr+X) ;(IX1) indexed w/8 bit offset
+<P></P>
+CPX opr,X ;X - (opr+X) ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+The contents of both ACCA and M(opr) are unchanged.
+<P></P>
+</BODY>
+</HTML>

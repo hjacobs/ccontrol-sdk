@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>ADC</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+ADC - Add with Carry into Acc               ;flags(H,N,Z,C)
+<P></P>
+</B>
+<P></P>
+ADC #opr ; A &lt;= A + C + opr ;(IMM) 8 bit immediate
+<P></P>
+ADC opr ; A &lt;= A + C + (opr) ;(DIR) 8 bit direct
+<P></P>
+ADC opr ; A &lt;= A + C + (opr) ;(EXT) 16 bit extended
+<P></P>
+ADC ,X  ; A &lt;= A + C + (X) ;(IX)  indexed no offset
+<P></P>
+ADC opr,X ; A &lt;= A + C + (opr+X) ;(IX1) indexed, 8 bit offset
+<P></P>
+ADC opr,X ; A &lt;= A + C + (opr+X) ;(IX2) indexed, 16 bit offset
+<P></P>
+</BODY>
+</HTML>

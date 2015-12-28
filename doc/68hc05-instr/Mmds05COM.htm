@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>COM</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+COM - One's Complement                      ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+COM opr ;(opr) &lt; $FF - (opr) ;(DIR) 8 bit direct
+<P></P>
+COM ,X  ;(X) &lt; $FF - (X)  ;(IX) indexed no offset
+<P></P>
+COM opr,X ;(opr+X) &lt; $FF - (opr+X) ;(IX1) indexed/8 bit offset
+<P></P>
+
+<P></P>
+Replaces the contents of M(opr) with its one's complement.
+<P></P>
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>JMP</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+JMP - Unconditional Jump to Address         ;flags()
+<P></P>
+</B>
+<P></P>
+A jump occurs to the instruction stored at the effective address. The
+effective address is obtained according to the rules for DIRect, EXTended or INDexed
+addressing.
+<P></P>
+
+<P></P>
+JMP opr  ;PC &lt;= opr ;(DIR) 8 bit direct
+<P></P>
+JMP opr  ;PC &lt;= opr ;(EXT) 16 bit extended
+<P></P>
+JMP ,X  ;PC &lt;= X ;(IX)  indexed no offset
+<P></P>
+JMP opr,X ;PC &lt;= X + opr ;(IX1) indexed w/8 bit offset
+<P></P>
+JMP opr,X ;PC &lt;= X + opr ;(IX2) indexed w/16 bit offset
+<P></P>
+</BODY>
+</HTML>

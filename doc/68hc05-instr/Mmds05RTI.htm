@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>RTI</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+RTI - Return from Interrupt                 ;flags(H,I,N,Z,C)
+<P></P>
+</B>
+<P></P>
+RTI ;SP &lt;= SP + 1 ;pull CCR ;(INH) inherent mode
+<P></P>
+ ;SP &lt;= SP + 1 ;pull A
+<P></P>
+ ;SP &lt;= SP + 1 ;pull X
+<P></P>
+ ;SP &lt;= SP + 1 ;pull PCH
+<P></P>
+ ;SP &lt;= SP + 1 ;pull PCL
+<P></P>
+
+<P></P>
+Program execution resumes at the address that was restored from the stack.
+<P></P>
+</BODY>
+</HTML>

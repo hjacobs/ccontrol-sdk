@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>EOR</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+EOR - Exclusive-OR with Memory              ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+EOR #opr ;A &lt;= A eor opr  ;(IMM) 8 bit immediate
+<P></P>
+EOR opr  ;A &lt;= A eor (opr)  ;(DIR) 8 bit direct
+<P></P>
+EOR opr  ;A &lt;= A eor (opr)  ;(EXT) 16 bit extended
+<P></P>
+EOR ,X  ;A &lt;= A eor (X)  ;(IX)  indexed no offset
+<P></P>
+EOR opr,X ;A &lt;= A eor (opr+X) ;(IX1) indexed w/8 bit offset
+<P></P>
+EOR opr,X ;A &lt;= A eor (opr+X) ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+Performs the logical exclusive-OR between the contents of ACCA and the
+contents of M(opr) and places the result in ACCA.
+<P></P>
+</BODY>
+</HTML>

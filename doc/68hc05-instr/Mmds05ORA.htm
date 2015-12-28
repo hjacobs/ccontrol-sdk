@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>ORA</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+ORA - Inclusive-OR Accumulator with Memory       ;flags(N,Z)
+<P></P>
+</B>
+<P></P>
+ORA #opr ;A &lt;= A or opr  ;(IMM) 8 bit immediate
+<P></P>
+ORA opr ;A &lt;= A or (opr)  ;(DIR) 8 bit direct
+<P></P>
+ORA opr ;A &lt;= A or (opr)  ;(EXT) 16 bit extended
+<P></P>
+ORA ,X  ;A &lt;= A or (X)  ;(IX)  indexed no offset
+<P></P>
+ORA opr,X ;A &lt;= A or (opr+X) ;(IX1) indexed w/8 bit offset
+<P></P>
+ORA opr,X ;A &lt;= A or (opr+X) ;(IX2) indexed w/16 bit offset
+<P></P>
+
+<P></P>
+Performs the logical inclusive-OR between the contents of A and the contents
+of M(opr) and places the result in A.
+<P></P>
+</BODY>
+</HTML>

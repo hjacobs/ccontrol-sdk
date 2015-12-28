@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>ROR</TITLE>
+</HEAD><BODY>
+<B>
+<P></P>
+ROR - Rotate Right through Carry            ;flags(N,Z,C)
+<P></P>
+</B>
+<P></P>
+ROR opr  ;C &gt; (opr) &gt; C  ;(DIR) 8 bit direct
+<P></P>
+ROR ,X  ;C &gt; (X) &gt; C  ;(IX)  indexed no offset
+<P></P>
+ROR opr,X ;C &gt; (opr+X) &gt; C  ;(IX1) indexed w/8 bit offset
+<P></P>
+
+<P></P>
+Shifts all bits of M(opr) one place to the right. Bit 7 is loaded from the C
+bit.
+<P></P>
+</BODY>
+</HTML>

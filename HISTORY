@@ -1,0 +1,20 @@
+History
+
+version 0001
+First port. An overnight hack.
+
+version 0002
+Fixed and included the broken Motorola assembler.
+Fixed the directory slash dos to unix bug in ccbasic.
+
+version 0003a
+Added some options to ccupload and download which make both look more like tools
+and less like dirty hacks (ttyS device is not hardcoded any more etc.)
+Fixed some minor bugs in ccbasic which would fail compiling on some systems.
+
+version 0.1
+First official release.
+Assembler is now working, although still far from perfect.
+Some minor changes in the upload/download tools.
+Added the dos2unix proggie which converts dos <cr><lf> to unix <lf>.
+Added the tests directory (hello.bas hello.asm) :-)
